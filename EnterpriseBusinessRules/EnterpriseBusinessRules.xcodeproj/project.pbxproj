@@ -7,16 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E433E9E51DD38D2B000090AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433E9E41DD38D2B000090AA /* Item.swift */; };
+		E433E9ED1DD3908C000090AA /* EnterpriseBusinessRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433E9EC1DD3908C000090AA /* EnterpriseBusinessRulesTests.swift */; };
+		E433E9EF1DD3908C000090AA /* EnterpriseBusinessRules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E748E2FA1DD37EFF0099D278 /* EnterpriseBusinessRules.framework */; };
+		E433E9FA1DD3A311000090AA /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433E9F91DD3A311000090AA /* ItemTests.swift */; };
 		E748E2FF1DD37EFF0099D278 /* EnterpriseBusinessRules.h in Headers */ = {isa = PBXBuildFile; fileRef = E748E2FD1DD37EFF0099D278 /* EnterpriseBusinessRules.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E433E9F01DD3908C000090AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E748E2F11DD37EFE0099D278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E748E2F91DD37EFF0099D278;
+			remoteInfo = EnterpriseBusinessRules;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E433E9E41DD38D2B000090AA /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E433E9EA1DD3908C000090AA /* EnterpriseBusinessRulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnterpriseBusinessRulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E433E9EC1DD3908C000090AA /* EnterpriseBusinessRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseBusinessRulesTests.swift; sourceTree = "<group>"; };
+		E433E9EE1DD3908C000090AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E433E9F91DD3A311000090AA /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		E748E2FA1DD37EFF0099D278 /* EnterpriseBusinessRules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EnterpriseBusinessRules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E748E2FD1DD37EFF0099D278 /* EnterpriseBusinessRules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterpriseBusinessRules.h; sourceTree = "<group>"; };
 		E748E2FE1DD37EFF0099D278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E433E9E71DD3908C000090AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E433E9EF1DD3908C000090AA /* EnterpriseBusinessRules.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E748E2F61DD37EFF0099D278 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -27,10 +54,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E433E9E11DD38B87000090AA /* EnterpriseBusinessRulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E433E9F81DD3A2E6000090AA /* Entities */,
+			);
+			name = EnterpriseBusinessRulesTests;
+			sourceTree = "<group>";
+		};
+		E433E9EB1DD3908C000090AA /* EnterpriseBusinessRulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E433E9EC1DD3908C000090AA /* EnterpriseBusinessRulesTests.swift */,
+				E433E9EE1DD3908C000090AA /* Info.plist */,
+			);
+			path = EnterpriseBusinessRulesTests;
+			sourceTree = "<group>";
+		};
+		E433E9F81DD3A2E6000090AA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E433E9F91DD3A311000090AA /* ItemTests.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		E748E2F01DD37EFE0099D278 = {
 			isa = PBXGroup;
 			children = (
+				E433E9E11DD38B87000090AA /* EnterpriseBusinessRulesTests */,
 				E748E2FC1DD37EFF0099D278 /* EnterpriseBusinessRules */,
+				E433E9EB1DD3908C000090AA /* EnterpriseBusinessRulesTests */,
 				E748E2FB1DD37EFF0099D278 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				E748E2FA1DD37EFF0099D278 /* EnterpriseBusinessRules.framework */,
+				E433E9EA1DD3908C000090AA /* EnterpriseBusinessRulesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +111,7 @@
 		E748E3051DD37F980099D278 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				E433E9E41DD38D2B000090AA /* Item.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -74,6 +130,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		E433E9E91DD3908C000090AA /* EnterpriseBusinessRulesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E433E9F21DD3908C000090AA /* Build configuration list for PBXNativeTarget "EnterpriseBusinessRulesTests" */;
+			buildPhases = (
+				E433E9E61DD3908C000090AA /* Sources */,
+				E433E9E71DD3908C000090AA /* Frameworks */,
+				E433E9E81DD3908C000090AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E433E9F11DD3908C000090AA /* PBXTargetDependency */,
+			);
+			name = EnterpriseBusinessRulesTests;
+			productName = EnterpriseBusinessRulesTests;
+			productReference = E433E9EA1DD3908C000090AA /* EnterpriseBusinessRulesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E748E2F91DD37EFF0099D278 /* EnterpriseBusinessRules */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E748E3021DD37EFF0099D278 /* Build configuration list for PBXNativeTarget "EnterpriseBusinessRules" */;
@@ -98,11 +172,17 @@
 		E748E2F11DD37EFE0099D278 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Nearshore Technology";
 				TargetAttributes = {
+					E433E9E91DD3908C000090AA = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					E748E2F91DD37EFF0099D278 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,11 +200,19 @@
 			projectRoot = "";
 			targets = (
 				E748E2F91DD37EFF0099D278 /* EnterpriseBusinessRules */,
+				E433E9E91DD3908C000090AA /* EnterpriseBusinessRulesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E433E9E81DD3908C000090AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E748E2F81DD37EFF0099D278 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,16 +223,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E433E9E61DD3908C000090AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E433E9ED1DD3908C000090AA /* EnterpriseBusinessRulesTests.swift in Sources */,
+				E433E9FA1DD3A311000090AA /* ItemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E748E2F51DD37EFF0099D278 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E433E9E51DD38D2B000090AA /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E433E9F11DD3908C000090AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E748E2F91DD37EFF0099D278 /* EnterpriseBusinessRules */;
+			targetProxy = E433E9F01DD3908C000090AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		E433E9F31DD3908C000090AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EnterpriseBusinessRulesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nst.EnterpriseBusinessRulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E433E9F41DD3908C000090AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EnterpriseBusinessRulesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nst.EnterpriseBusinessRulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		E748E3001DD37EFF0099D278 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -247,6 +375,7 @@
 		E748E3031DD37EFF0099D278 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -258,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nearshoretechnology.EnterpriseBusinessRules;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -265,6 +395,7 @@
 		E748E3041DD37EFF0099D278 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -283,6 +414,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E433E9F21DD3908C000090AA /* Build configuration list for PBXNativeTarget "EnterpriseBusinessRulesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E433E9F31DD3908C000090AA /* Debug */,
+				E433E9F41DD3908C000090AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E748E2F41DD37EFE0099D278 /* Build configuration list for PBXProject "EnterpriseBusinessRules" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -299,6 +438,7 @@
 				E748E3041DD37EFF0099D278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
